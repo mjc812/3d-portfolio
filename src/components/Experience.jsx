@@ -12,6 +12,9 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+//code belongs to https://github.com/adrianhajdin/project_3D_developer_portfolio/blob/main/src/hoc/SectionWrapper.jsx. 
+//proper citations will be added soon
+
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement contentArrowStyle={{ borderRight: "7px solid  #232631" }} date={experience.date} 
