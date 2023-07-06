@@ -33,7 +33,7 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0); 
           }}>
-            <img src={logo} alt='logo' className='w-10 h-10 object-contain' />
+            <img src={logo} alt='logo' className=' w-14 h-14 object-contain' />
             <p className='text-white text-[18px] font-bold cursor-pointer flex'>
               Michael Jung &nbsp;
               <span className='sm:block hidden'> | Portfolio</span>
