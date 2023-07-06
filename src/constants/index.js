@@ -1,3 +1,6 @@
+//code belongs to https://github.com/adrianhajdin/project_3D_developer_portfolio/blob/main/src/hoc/SectionWrapper.jsx. 
+//proper citations will be added soon
+
 import {
     mobile,
     backend,

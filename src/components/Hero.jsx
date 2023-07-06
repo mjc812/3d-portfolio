@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
+//code belongs to https://github.com/adrianhajdin/project_3D_developer_portfolio/blob/main/src/hoc/SectionWrapper.jsx. 
+//proper citations will be added soon
+
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
