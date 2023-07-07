@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import ModalPopup from "./ModalPopup";
+import { Modal } from "./Modal";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ openModal, index, name, description, tags, image, source_code_link }) => {
@@ -48,18 +48,19 @@ const Works = () => {
   const [selectedModal, setSelectedModal] = useState(null);
 
   const openModal = (modalId) => {
+    console.log("open");
     setSelectedModal(modalId);
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
+    console.log("close");
     setSelectedModal(null);
     setModalIsOpen(false);
   };
 
   return (
     <>
-    <ModalPopup isOpen={modalIsOpen} onRequestClose={closeModal} selectedModal={selectedModal} closeModal={closeModal}/>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -83,6 +84,7 @@ const Works = () => {
           <ProjectCard openModal={openModal} key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+      {modalIsOpen && <Modal modalOpen={modalIsOpen} handleClose={closeModal}></Modal>}
     </>
   );
 };
