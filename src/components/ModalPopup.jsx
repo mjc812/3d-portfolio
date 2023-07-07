@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
 
-const customStyles = {
+const modalStyles = {
   content: {
     top: '50%',
     left: '50%',
@@ -19,46 +19,19 @@ const customStyles = {
     padding: '2rem',
     borderRadius: '0.75rem',
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+    opacity: 1,
+    transition: 'opacity 300ms',
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
 };
 
-const modalVariants = {
-  initial: {
-    opacity: 0,
-    scale: 0.8,
-  },
-  open: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      type: 'spring',
-      damping: 20,
-      stiffness: 300,
-    },
-  },
-};
-
 const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
-  const modalAnimation = useSpring({
-    opacity: isOpen ? 1 : 0,
-    transform: isOpen ? 'translate(-50%, -50%) scale(1)' : 'translate(-50%, -50%) scale(0.8)',
-  });
   return (
-    <Modal style={customStyles} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Springy Modal" ariaHideApp={false}>
-      <motion.div
-        className="border-gradient"
-        initial="initial"
-        animate={isOpen ? 'open' : 'initial'}
-        variants={modalVariants}
-      >
-      <button className="close-button" onClick={onRequestClose} aria-label="Close Modal"/>
-        <div>
+    <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Springy Modal" ariaHideApp={false}>
+        <button className='fixed top-0 right-0 mt-4 mr-4 text-white font-bold py-2 px-4 rounded' onClick={closeModal}>Close</button>
+        <div className='sticky top-0'>
           {selectedModal === 'Car Rent' && (
             <>
               <h2 className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>Modal 1</h2>
@@ -78,8 +51,6 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           </>
         )}
         </div>
-      <button onClick={closeModal}>Close</button>
-      </motion.div>
     </Modal>
   );
 };
