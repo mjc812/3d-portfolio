@@ -40,7 +40,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
             <>
               <h5 className='text-secondary text-[30px] max-w-3xl leading-[30px]'>Forest 1</h5>
               <div className="flex flex-col md:flex-row">
-                <p className='text-secondary text-[17px] max-w-3xl leading-[30px]'>
+                <p className='text-secondary text-[17px] max-w-3xl leading-[30px] mb-4 md:mb-0'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                   dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
                   Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
