@@ -2,9 +2,9 @@ import React from 'react'
 import Modal from 'react-modal';
 import { useSpring, animated } from 'react-spring';
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../../utils/motion";
 import { Tilt } from "react-tilt";
-
+import './ModalPopup.css';
 
 const modalStyles = {
   content: {
@@ -29,7 +29,7 @@ const modalStyles = {
 
 const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
   return (
-    <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Springy Modal" ariaHideApp={false}>
+    <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Modal" ariaHideApp={false} closeTimeoutMS={200}>
         <button className='fixed top-0 right-0 mt-4 mr-4 text-white font-bold py-2 px-4 rounded' onClick={closeModal}>Close</button>
         <div className='sticky top-0'>
           {selectedModal === 'Car Rent' && (
