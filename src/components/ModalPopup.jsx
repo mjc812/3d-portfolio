@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
-
+import Slider from "./Slider";
 
 const modalStyles = {
   content: {
@@ -30,7 +30,9 @@ const modalStyles = {
 const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
   return (
     <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Springy Modal" ariaHideApp={false}>
+      <div className="flex flex-col items-center">
         <button className='fixed top-0 right-0 mt-4 mr-4 text-white font-bold py-2 px-4 rounded' onClick={closeModal}>Close</button>
+        <Slider></Slider>
         <div className='sticky top-0'>
           {selectedModal === 'Car Rent' && (
             <>
@@ -51,6 +53,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           </>
         )}
         </div>
+      </div>
     </Modal>
   );
 };
