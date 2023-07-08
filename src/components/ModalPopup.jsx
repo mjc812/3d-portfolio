@@ -30,15 +30,34 @@ const modalStyles = {
 const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
   return (
     <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Springy Modal" ariaHideApp={false}>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col">
         <button className='fixed top-0 right-0 mt-4 mr-4 text-white font-bold py-2 px-4 rounded' onClick={closeModal}>Close</button>
-        <Slider></Slider>
-        <div className='sticky top-0'>
+        <Slider/>
+        <div className="mt-5 flex flex-col space-y-5">
           {selectedModal === 'Car Rent' && (
             <>
-              <h2 className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>Modal 1</h2>
-              <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>This is the content of Modal 1.</p>
-            </> 
+              <h5 className='text-secondary text-[30px] max-w-3xl leading-[30px]'>Forest 1</h5>
+              <div className="flex flex-col md:flex-row">
+                <p className='text-secondary text-[17px] max-w-3xl leading-[30px]'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
+                  dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
+                  Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
+                  vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
+                  Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
+                </p>
+                {/* <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+                  
+                </p> */}
+                <ul className="list-disc pl-4 text-secondary text-[17px] max-w-3xl">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
+                  dui justo consectetur erat, non cursus turpis tortor non sapien.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
+                  dui justo consectetur erat, non cursus turpis tortor non sapien.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
+                  dui justo consectetur erat, non cursus turpis tortor non sapien.</li>
+                  </ul>
+              </div>
+            </>
           )}
           {selectedModal === 'Job IT' && (
             <>
