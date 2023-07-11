@@ -2,7 +2,7 @@ import React from 'react'
 import Modal from 'react-modal';
 import Slider from "../Slider";
 import './ModalPopup.css';
-import { projects } from "../../constants";
+import { projects, socials } from "../../constants";
 import Socials from "../Socials";
 
 const modalStyles = {

@@ -116,6 +116,14 @@ import {
       icon: docker,
     },
   ];
+
+  const socials = {
+    github: "Github",
+    linkedIn: "LinkedIn",
+    youTube: "YouTube",
+    reddit: "Reddit",
+    unity: "Unity"
+  }
   
   const experiences = [
     {
@@ -201,7 +209,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Forest",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -226,6 +234,20 @@ import {
         "Developed modular and reusable UI components that serve as building blocks for the game’s UI pages",
         "Achieved an average of 200k Tris, 300k Verts, and 180 frames per second, representing a 86%, 95%, 64% increase in optimization from the initial import of assets, respectively",
         "Shipped and available for demo on Unity game gallery, video demo available at (Youtube link)"
+      ],
+      socials: [
+        {
+          social: socials.github,
+          href: "https://www.github.com"
+        },
+        {
+          social: socials.youtube,
+          href: "https://www.youtube.com"
+        },
+        {
+          social: socials.unity,
+          href: "https://www.unity.com"
+        },
       ]
     },
     {
@@ -254,10 +276,24 @@ import {
         "Minimized the diffuseness while maximizing the consistency between methods and features of the language",
         "Tokenized raw user input into a list of token, then parsed the list into a validated AST tree using a nodes to represent different blocks of the language",
         "Performed a dynamic analysis using the visitor pattern on the generated AST tree to execute the code produced by the user"
+      ],
+      socials: [
+        {
+          social: socials.github,
+          href: "https://www.github.com"
+        },
+        {
+          social: socials.youtube,
+          href: "https://www.youtube.com"
+        },
+        {
+          social: socials.unity,
+          href: "https://www.unity.com"
+        },
       ]
     },
     {
-      name: "Trip Guide",
+      name: "Pymethod",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -282,8 +318,22 @@ import {
         "Managed time-sensitive updates, content changes and bug fixes that were implemented after multiple user studies",
         "Engaged in 1:1 and group discussions to ensure that all other developers were caught up with the latest updates",
         "Implemented the static and dynamic analyses to parse a given program, then implemented RESTful API points to communicate the data from the analyses"
+      ],
+      socials: [
+        {
+          social: socials.github,
+          href: "https://www.github.com"
+        },
+        {
+          social: socials.youtube,
+          href: "https://www.youtube.com"
+        },
+        {
+          social: socials.unity,
+          href: "https://www.unity.com"
+        },
       ]
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { socials, services, technologies, experiences, testimonials, projects };
