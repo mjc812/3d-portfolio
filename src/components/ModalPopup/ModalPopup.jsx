@@ -1,10 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal';
-import { useSpring, animated } from 'react-spring';
-import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
-import { Tilt } from "react-tilt";
-import Slider from "./Slider";
+import Slider from "../Slider";
+import './ModalPopup.css';
 
 const modalStyles = {
   content: {
@@ -39,15 +36,15 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           {selectedModal === 'Car Rent' && (
             <>
               <h5 className='text-secondary text-[30px] max-w-3xl leading-[30px]'>Forest 1</h5>
-              <div className="flex flex-col md:flex-row">
-                <p className='text-secondary text-[17px] max-w-3xl leading-[30px] mb-4 md:mb-0'>
+              <div className="flex flex-col md:flex-row space-x-5">
+                <p className='text-secondary text-[15px] max-w-2xl leading-[30px] mb-4 md:mb-0'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                   dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
                   Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
                   vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
                   Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
                 </p>
-                <ul className="list-disc pl-4 text-secondary text-[17px] max-w-3xl">
+                <ul className="list-disc pl-4 text-secondary text-[15px] max-w-3xl">
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                   dui justo consectetur erat, non cursus turpis tortor non sapien.</li>
                   <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
@@ -58,18 +55,9 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
               </div>
             </>
           )}
-          {selectedModal === 'Job IT' && (
-            <>
-              <h2 className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>Modal 2</h2>
-              <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>This is the content of Modal 2.</p>
-            </>
-          )}
-        {selectedModal === 'Trip Guide' && (
-          <>
-            <h2 className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' >Modal 3</h2>
-            <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' >This is the content of Modal 3.</p>
-          </>
-        )}
+        </div>
+        <div>
+          Social Media
         </div>
       </div>
     </Modal>
