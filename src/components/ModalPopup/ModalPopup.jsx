@@ -3,11 +3,7 @@ import Modal from 'react-modal';
 import Slider from "../Slider";
 import './ModalPopup.css';
 import { projects } from "../../constants";
-import { useSpring, animated } from 'react-spring';
-import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../utils/motion";
-import { Tilt } from "react-tilt";
-import './ModalPopup.css';
+import Socials from "../Socials";
 
 const modalStyles = {
   content: {
@@ -39,7 +35,10 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           <Slider/>
         </div>
         <div className="flex flex-col">
-          <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px]'>{selectedModal}</h5>
+          <div className="flex flex-row">
+            <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>{selectedModal}</h5>
+            <Socials/>
+          </div>
           <div className="flex flex-col md:flex-row space-x-5">
             <p className='text-secondary text-[17px] max-w-3xl leading-[30px]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
@@ -69,9 +68,6 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
               })}
             </ul>
           </div>
-        </div>
-        <div>
-          Social Media
         </div>
       </div>
     </Modal>
