@@ -220,9 +220,16 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/",
+      achievements: [
+        "Designed the architecture, scenes, and prefabs models of a 3D game made with Unity and C#",
+        "Designed systems for audio management, AI movement and behaviors, player movement and rotation, dynamic post-processing effects, UI, and in-game item interaction for an immersive gameplay experience",
+        "Developed modular and reusable UI components that serve as building blocks for the game’s UI pages",
+        "Achieved an average of 200k Tris, 300k Verts, and 180 frames per second, representing a 86%, 95%, 64% increase in optimization from the initial import of assets, respectively",
+        "Shipped and available for demo on Unity game gallery, video demo available at (Youtube link)"
+      ]
     },
     {
-      name: "Job IT",
+      name: "Easy Linux Format",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -241,6 +248,13 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      achievements: [
+        "Designed and wrote domain specific language to abstract away linux commands with a more intuitive grammar and syntactic system",
+        "Adhered to good domain specific language design by keeping the language self-contained, abstraction gradient low, conceptual model simple, and fully documented",
+        "Minimized the diffuseness while maximizing the consistency between methods and features of the language",
+        "Tokenized raw user input into a list of token, then parsed the list into a validated AST tree using a nodes to represent different blocks of the language",
+        "Performed a dynamic analysis using the visitor pattern on the generated AST tree to execute the code produced by the user"
+      ]
     },
     {
       name: "Trip Guide",
@@ -262,6 +276,13 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      achievements: [
+        "Spearheaded a team to develop a full-stack web application that performs a static and online dynamic analysis on python programs to trace its control flow, and renders the data visually using a centrality graph",
+        "Laid the technology stack and designed the architecture of the project",
+        "Managed time-sensitive updates, content changes and bug fixes that were implemented after multiple user studies",
+        "Engaged in 1:1 and group discussions to ensure that all other developers were caught up with the latest updates",
+        "Implemented the static and dynamic analyses to parse a given program, then implemented RESTful API points to communicate the data from the analyses"
+      ]
     },
   ];
   
