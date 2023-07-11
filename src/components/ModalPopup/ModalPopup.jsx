@@ -3,6 +3,11 @@ import Modal from 'react-modal';
 import Slider from "../Slider";
 import './ModalPopup.css';
 import { projects } from "../../constants";
+import { useSpring, animated } from 'react-spring';
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../../utils/motion";
+import { Tilt } from "react-tilt";
+import './ModalPopup.css';
 
 const modalStyles = {
   content: {

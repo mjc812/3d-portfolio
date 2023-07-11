@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import ModalPopup from "./ModalPopup";
+import ModalPopup from "./ModalPopup/ModalPopup";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ openModal, index, name, description, tags, image, source_code_link }) => {
