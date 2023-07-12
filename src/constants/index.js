@@ -237,15 +237,15 @@ import {
       ],
       socials: [
         {
-          social: socials.github,
+          name: socials.github,
           href: "https://www.github.com"
         },
         {
-          social: socials.youtube,
+          name: socials.youTube,
           href: "https://www.youtube.com"
         },
         {
-          social: socials.unity,
+          name: socials.unity,
           href: "https://www.unity.com"
         },
       ]
@@ -279,15 +279,15 @@ import {
       ],
       socials: [
         {
-          social: socials.github,
+          name: socials.github,
           href: "https://www.github.com"
         },
         {
-          social: socials.youtube,
+          name: socials.youTube,
           href: "https://www.youtube.com"
         },
         {
-          social: socials.unity,
+          name: socials.unity,
           href: "https://www.unity.com"
         },
       ]
@@ -321,15 +321,15 @@ import {
       ],
       socials: [
         {
-          social: socials.github,
+          name: socials.github,
           href: "https://www.github.com"
         },
         {
-          social: socials.youtube,
+          name: socials.youTube,
           href: "https://www.youtube.com"
         },
         {
-          social: socials.unity,
+          name: socials.unity,
           href: "https://www.unity.com"
         },
       ]

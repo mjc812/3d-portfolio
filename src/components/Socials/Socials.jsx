@@ -1,31 +1,44 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faGithub, faUnity } from '@fortawesome/free-brands-svg-icons';
+import { socials } from "../../constants";
 
-function Socials() {
+const Socials = (socialsList, description) => {
   return (
-    <div className="flex items-center justify-center h-full">
+    <div className="flex items-center h-full">
       <ul className="flex space-x-4">
-        <li>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-            <div className="icon-background">
-              <FontAwesomeIcon icon={faYoutube} size="2x" />
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-            <div className="icon-background">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://unity.com" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-            <div className="icon-background">
-              <FontAwesomeIcon icon={faUnity} size="2x" />
-            </div>
-          </a>
-        </li>
+        {socialsList.socials.map((social, index) => {
+          if (social.name == socials.github) {
+            return (
+              <li key={index}>
+                <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                  <div className="icon-background">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                  </div>
+                </a>
+              </li>
+            );
+          } else if (social.name == socials.youTube) {
+            return (
+              <li key={index}>
+                <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                  <div className="icon-background">
+                    <FontAwesomeIcon icon={faYoutube} size="2x" />
+                  </div>
+                </a>
+              </li>
+            );
+          } else if (social.name == socials.unity) {
+            return (
+              <li key={index}>
+                <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                  <div className="icon-background">
+                    <FontAwesomeIcon icon={faUnity} size="2x" />
+                  </div>
+                </a>
+              </li>
+            );
+          }
+        })}
       </ul>
     </div>
   );
