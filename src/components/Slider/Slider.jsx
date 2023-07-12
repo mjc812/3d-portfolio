@@ -4,8 +4,9 @@ import { data } from './data';
 const Slider = () => {
   return (
     <div className='w-full min-h-72 max-h-72 pt-5 pb-4 overflow-x-scroll scroll whitespace-nowrap scroll-smooth' id='slider' >
-        {data.map((item) => (
+        {data.map((item, index) => (
             <img
+                key={index}
                 className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
                 src={item.img}
                 alt='/'
