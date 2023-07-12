@@ -4,6 +4,7 @@ import Slider from "../Slider";
 import './ModalPopup.css';
 import { projects, socials } from "../../constants";
 import Socials from "../Socials";
+import Video from "../Video";
 
 const modalStyles = {
   content: {
@@ -45,14 +46,13 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                 <Socials  className="right-0" socials={project.socials} />
                 </div>
                 <div className="flex flex-col md:flex-row space-x-5">
-                    <p className='text-secondary text-[17px] max-w-3xl leading-[30px]'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
-                      dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
-                      Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
-                      vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
-                      Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
-                    </p>
-                  
+                  <p className='text-secondary text-[17px] max-w-3xl leading-[30px]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
+                    dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
+                    Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
+                    vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
+                    Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
+                  </p>            
                   <ul className="list-disc text-secondary text-[17px] max-w-3xl leading-[30px]">
                     <div key={index}>
                       {project.achievements.map((achievement, innerIndex) => (
@@ -61,6 +61,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                     </div>
                   </ul>
                 </div>
+                {/* <Video/> */}
               </div>
             </div>
           );
