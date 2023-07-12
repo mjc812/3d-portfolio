@@ -5,6 +5,7 @@ import './ModalPopup.css';
 import { projects, socials } from "../../constants";
 import Socials from "../Socials";
 import Video from "../Video";
+import { MdClose } from 'react-icons/md';
 
 const modalStyles = {
   content: {
@@ -34,8 +35,12 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
         if (project.name === selectedModal) {
           return (
             <div key={index} className="flex flex-col">
-              <button className='fixed top-0 right-0 mt-4 mr-8 text-white lg:text-[18px] sm:text-[15px] xs:text-[15px] text-[15px] font-bold cursor-pointer flex' onClick={closeModal}>Close</button>
-              <Slider/>
+              <button className='fixed top-0 right-0 mt-5 mr-7 text-white lg:text-[18px] sm:text-[15px] xs:text-[15px] text-[15px] font-bold cursor-pointer flex' onClick={closeModal}>
+                <MdClose className='hover:scale-150 ease-in-out duration-300 opacity-50 cursor-pointer hover:opacity-100' size={35}/>
+              </button>
+              <div className=' mt-5'>
+                <Slider/>
+              </div>
               <div>
                 <div className="flex flex-row">
                   <h5 className='font-black text-white lg:text-[40px] md:text-[40px] sm:text-[40px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
@@ -45,7 +50,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                     <Socials socialsList={project.socials} description={true} />
                   </div>
                 </div>
-                <div className="space-y-8">
+                <div className="space-y-10  ">
                   <p className='text-secondary text-[17px] leading-[30px] max-w-full'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                     dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
