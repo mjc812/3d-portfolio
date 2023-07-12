@@ -53,8 +53,10 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                     vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
                     Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
                   </p>
-                  <div className=" max-w-3xl">
+                  <div className="justify-center items-center">
+                    <div className="child max-w-4xl mx-auto">
                       <Video />
+                    </div>
                   </div>
                   <ul className="ml-5 list-disc text-secondary text-[17px] max-w-full leading-[30px]">
                     <div key={index} className="mb-10">
