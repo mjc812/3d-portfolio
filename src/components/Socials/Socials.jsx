@@ -1,19 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faGithub, faUnity } from '@fortawesome/free-brands-svg-icons';
-import { socials } from "../../constants";
-
+import { socials } from "../../constants"; //hidden sm:block
 const Socials = ({socialsList, description}) => {
   return (
-    <div className="items-center h-full hidden sm:block">
+    <div className="h-full">
       <ul className="items-center h-full flex space-x-4">
         {socialsList.map((social, index) => {
           if (social.name == socials.github) {
             return (
-              <div class="flex flex-row space-x-3">
+              <div key={index} className="flex flex-row space-x-3">
                 <p className='text-secondary text-[13px] leading-[30px] max-w-full'>
                   GITHUB REPO:
                 </p>
-                <li key={index}>
+                <li>
                   <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                     <div className="icon-background">
                       <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -34,11 +33,11 @@ const Socials = ({socialsList, description}) => {
             );
           } else if (social.name == socials.unity) {
             return (
-              <div class="flex flex-row space-x-3">
+              <div key={index} className="flex flex-row space-x-3">
                 <p className='text-secondary text-[13px] leading-[30px] max-w-full'>
                   PLAYABLE DEMO:
                 </p>
-                <li key={index}>
+                <li>
                   <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                     <div className="icon-background">
                       <FontAwesomeIcon icon={faUnity} size="2x" />
