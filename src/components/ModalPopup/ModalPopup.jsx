@@ -38,7 +38,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
               <Slider/>
               <div>
                 <div className="flex flex-row">
-                  <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
+                  <h5 className='font-black text-white lg:text-[40px] md:text-[40px] sm:text-[40px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
                     {selectedModal}
                   </h5>
                   <div className="ml-auto">

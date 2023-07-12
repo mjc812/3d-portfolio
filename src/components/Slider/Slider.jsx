@@ -20,7 +20,7 @@ const Slider = () => {
           onClick={slideLeft} size={40} 
         />
       </div>
-      <div className='min-h-72 max-h-72 pt-5 pb-4 overflow-x-scroll scroll whitespace-nowrap scroll-smooth' id='slider' >
+      <div className='min-h-72 max-h-72 pt-5 pb-4 overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide' id='slider' >
         {data.map((item, index) => (
         <img
           key={index}
