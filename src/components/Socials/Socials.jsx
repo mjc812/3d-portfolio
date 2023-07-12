@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faGithub, faUnity } from '@fortawesome/free-brands-svg-icons';
-import { socials } from "../../constants";
-
+import { socials } from "../../constants"; //hidden sm:block
 const Socials = ({socialsList, description}) => {
   return (
-    <div className="items-center h-full">
+    <div className="h-full">
       <ul className="items-center h-full flex space-x-4">
         {socialsList.map((social, index) => {
           if (social.name == socials.github) {
