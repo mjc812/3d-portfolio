@@ -50,11 +50,13 @@ const Works = () => {
   const openModal = (modalId) => {
     setSelectedModal(modalId);
     setModalIsOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setSelectedModal(null);
     setModalIsOpen(false);
+    document.body.style.overflow = 'unset';
   };
 
   return (
