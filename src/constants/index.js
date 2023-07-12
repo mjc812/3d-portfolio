@@ -241,14 +241,13 @@ import {
           href: "https://www.github.com"
         },
         {
-          name: socials.youTube,
-          href: "https://www.youtube.com"
-        },
-        {
           name: socials.unity,
           href: "https://www.unity.com"
         },
-      ]
+      ],
+      embedded: {
+        href:  "https://www.youtube.com"
+      }
     },
     {
       name: "Easy Linux Format",

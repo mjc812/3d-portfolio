@@ -2,20 +2,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faGithub, faUnity } from '@fortawesome/free-brands-svg-icons';
 import { socials } from "../../constants";
 
-const Socials = (socialsList, description) => {
+const Socials = ({socialsList, description}) => {
   return (
-    <div className="flex items-center h-full">
+    <div className="items-center h-full hidden sm:block">
       <ul className="flex space-x-4">
-        {socialsList.socials.map((social, index) => {
+        {socialsList.map((social, index) => {
           if (social.name == socials.github) {
             return (
-              <li key={index}>
-                <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                  <div className="icon-background">
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                  </div>
-                </a>
-              </li>
+              <div class="flex flex-row space-x-3">
+                <p className='text-secondary text-[13px] leading-[30px] max-w-full'>
+                  GITHUB REPO:
+                </p>
+                <li key={index}>
+                  <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                    <div className="icon-background">
+                      <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </div>
+                  </a>
+                </li>
+              </div>
             );
           } else if (social.name == socials.youTube) {
             return (
@@ -29,13 +34,18 @@ const Socials = (socialsList, description) => {
             );
           } else if (social.name == socials.unity) {
             return (
-              <li key={index}>
-                <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                  <div className="icon-background">
-                    <FontAwesomeIcon icon={faUnity} size="2x" />
-                  </div>
-                </a>
-              </li>
+              <div class="flex flex-row space-x-3">
+                <p className='text-secondary text-[13px] leading-[30px] max-w-full'>
+                  PLAYABLE DEMO:
+                </p>
+                <li key={index}>
+                  <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                    <div className="icon-background">
+                      <FontAwesomeIcon icon={faUnity} size="2x" />
+                    </div>
+                  </a>
+                </li>
+              </div>
             );
           }
         })}

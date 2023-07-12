@@ -43,9 +43,11 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                   <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
                     {selectedModal}
                   </h5>
-                  {/* <Socials  className="right-0" socials={project.socials} /> */}
+                  <div className="ml-auto">
+                    <Socials socialsList={project.socials} description={true} />
+                  </div>
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-8">
                   <p className='text-secondary text-[17px] leading-[30px] max-w-full'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                     dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
