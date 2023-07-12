@@ -35,9 +35,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           return (
             <div key={index} className="flex flex-col">
               <button className='fixed top-0 right-0 mt-4 mr-8 text-white lg:text-[18px] sm:text-[15px] xs:text-[15px] text-[15px] font-bold cursor-pointer flex' onClick={closeModal}>Close</button>
-              <div className='w-full min-h-72 max-h-72'>
-                <Slider/>
-              </div>
+              <Slider/>
               <div>
                 <div className="flex flex-row">
                   <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
