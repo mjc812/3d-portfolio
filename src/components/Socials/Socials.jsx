@@ -5,7 +5,7 @@ import { socials } from "../../constants";
 const Socials = ({socialsList, description}) => {
   return (
     <div className="items-center h-full hidden sm:block">
-      <ul className="flex space-x-4">
+      <ul className="items-center h-full flex space-x-4">
         {socialsList.map((social, index) => {
           if (social.name == socials.github) {
             return (
