@@ -38,30 +38,32 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
               <div className='w-full min-h-72 max-h-72'>
                 <Slider/>
               </div>
-              <div className="flex flex-col">
-              <div className="flex flex-row">
-                <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
-                  {selectedModal}
-                </h5>
-                <Socials  className="right-0" socials={project.socials} />
+              <div>
+                <div className="flex flex-row">
+                  <h5 className='font-black text-white lg:text-[40px] sm:text-[30px] xs:text-[30px] text-[30px] lg:leading-[98px] mr-5'>
+                    {selectedModal}
+                  </h5>
+                  {/* <Socials  className="right-0" socials={project.socials} /> */}
                 </div>
-                <div className="flex flex-col md:flex-row space-x-5">
-                  <p className='text-secondary text-[17px] max-w-3xl leading-[30px]'>
+                <div className="space-y-5">
+                  <p className='text-secondary text-[17px] leading-[30px] max-w-full'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                     dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
                     Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
                     vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
                     Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
-                  </p>            
-                  <ul className="list-disc text-secondary text-[17px] max-w-3xl leading-[30px]">
-                    <div key={index}>
+                  </p>
+                  <div className=" max-w-3xl">
+                      <Video />
+                  </div>
+                  <ul className="ml-5 list-disc text-secondary text-[17px] max-w-full leading-[30px]">
+                    <div key={index} className="mb-10">
                       {project.achievements.map((achievement, innerIndex) => (
                         <li key={innerIndex}>{achievement}</li>
                       ))}
                     </div>
                   </ul>
                 </div>
-                {/* <Video/> */}
               </div>
             </div>
           );
