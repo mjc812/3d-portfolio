@@ -1,11 +1,16 @@
 import React from 'react'
+
 import Modal from 'react-modal';
-import Slider from "../Slider";
+import { MdClose } from 'react-icons/md';
+
 import './ModalPopup.css';
-import { projects, socials } from "../../constants";
+
+import { projects } from "../../constants";
+
+import Slider from "../Slider";
 import Socials from "../Socials";
 import Video from "../Video";
-import { MdClose } from 'react-icons/md';
+
 
 const modalStyles = {
   content: {
@@ -20,6 +25,7 @@ const modalStyles = {
     border: '3px solid #4F3199',
     display: 'flex',
     opacity: 1,
+    borderRadius: '13px',
     transition: 'opacity 300ms',
     padding: '0rem',
   },
@@ -29,7 +35,7 @@ const modalStyles = {
 };
 
 const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
-  return ( //<div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+  return (
     <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} ariaHideApp={false}>
       <div className='p-10 bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <button className='text-white lg:text-[18px] sm:text-[15px] xs:text-[15px] text-[15px] font-bold cursor-pointer flex' onClick={closeModal}>
