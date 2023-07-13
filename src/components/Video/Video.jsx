@@ -1,13 +1,13 @@
 import React from 'react'
 import './Video.css';
 
-const Video = () => {
+const Video = ({ href }) => {
   return (
     <div className='video-container'>
       <iframe
         height="315"
         width="560"
-        src="https://www.youtube-nocookie.com/embed/cRMgyxhZQyw" 
+        src={href}
         title="YouTube video"
         allowFullScreen
         >

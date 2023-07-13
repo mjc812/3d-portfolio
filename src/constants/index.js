@@ -214,15 +214,15 @@ import {
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "C#",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: ".NET",
           color: "pink-text-gradient",
         },
       ],
@@ -246,7 +246,7 @@ import {
         },
       ],
       embedded: {
-        href:  "https://www.youtube.com"
+        href: "https://www.youtube.com/embed/la2ztR5askE"
       }
     },
     {

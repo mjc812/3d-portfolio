@@ -42,7 +42,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                 <Slider/>
               </div>
               <div>
-                <div className="flex flex-col space-y-5">
+                <div className="flex flex-col space-y-3">
                   <div/>
                   <h5 className='font-black text-white lg:text-[40px] md:text-[40px] sm:text-[40px] xs:text-[30px] text-[30px] lg:leading-snug'>
                     {selectedModal}
@@ -52,7 +52,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                   </div>
                   <div/>
                 </div>
-                <div className="space-y-10  ">
+                <div className="space-y-5">
                   <p className='text-secondary text-[17px] leading-[30px] max-w-full'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
                     dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
@@ -62,16 +62,24 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                   </p>
                   <div className="justify-center items-center">
                     <div className="child max-w-4xl mx-auto">
-                      <Video />
+                      {project.embedded && <Video href={project.embedded.href} />}
                     </div>
                   </div>
                   <ul className="ml-5 list-disc text-secondary text-[17px] max-w-full leading-[30px]">
-                    <div key={index} className="mb-10">
+                    <div key={index} className="mb-5">
                       {project.achievements.map((achievement, innerIndex) => (
                         <li key={innerIndex}>{achievement}</li>
                       ))}
                     </div>
                   </ul>
+                  <div className='flex flex-wrap gap-2'>
+                    {project.tags.map((tag) => (
+                      <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`} >
+                        #{tag.name}
+                      </p>
+                    ))}
+                  </div>
+                  <div/>
                 </div>
               </div>
             </div>
