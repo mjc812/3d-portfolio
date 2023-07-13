@@ -31,17 +31,15 @@ const modalStyles = {
 const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
   return ( //<div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
     <Modal style={modalStyles} isOpen={isOpen} onRequestClose={onRequestClose} ariaHideApp={false}>
-      <div className='p-5 bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <div className='p-10 bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <button className='text-white lg:text-[18px] sm:text-[15px] xs:text-[15px] text-[15px] font-bold cursor-pointer flex' onClick={closeModal}>
+          <MdClose className='hover:scale-150 ease-in-out duration-300 opacity-50 cursor-pointer hover:opacity-100' size={30}/>
+        </button>
         {projects.map((project, index) => {
           if (project.name === selectedModal) {
             return (
               <div key={index} className="flex flex-col">
-                <button className='fixed top-0 right-0 mt-5 mr-7 text-white lg:text-[18px] sm:text-[15px] xs:text-[15px] text-[15px] font-bold cursor-pointer flex' onClick={closeModal}>
-                  <MdClose className='hover:scale-150 ease-in-out duration-300 opacity-50 cursor-pointer hover:opacity-100' size={30}/>
-                </button>
-                <div className=' mt-5'>
-                  <Slider/>
-                </div>
+                <Slider/>
                 <div>
                   <div className="flex flex-col space-y-3">
                     <div/>
