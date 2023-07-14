@@ -21,16 +21,6 @@ const Socials = ({socialsList, description}) => {
                 </li>
               </div>
             );
-          } else if (social.name == socials.youTube) {
-            return (
-              <li key={index}>
-                <a href={social.href} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                  <div className="icon-background">
-                    <FontAwesomeIcon icon={faYoutube} size="2x" />
-                  </div>
-                </a>
-              </li>
-            );
           } else if (social.name == socials.unity) {
             return (
               <div key={index} className="flex flex-row space-x-3">

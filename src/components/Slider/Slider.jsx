@@ -20,11 +20,11 @@ const Slider = () => {
           onClick={slideLeft} size={40} 
         />
       </div>
-      <div className='min-h-72 max-h-72 pt-3 overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide' id='slider' >
+      <div className='min-h-72 max-h-72 pt-3 overflow-x-scroll overflow-y-hidden whitespace-nowrap scrollbar-hide' id='slider' >
         {data.map((item, index) => (
         <img
           key={index}
-          className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
+          className='w-[250px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
           src={item.img}
           alt='/'
         />
