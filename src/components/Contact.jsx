@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faGithub, faUnity, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -67,10 +69,11 @@ const Contact = () => {
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl' >
-        <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        
-        <form ref={formRef}onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
+        <div className="mt-3">
+          <p className={styles.sectionSubText}>Email me</p>
+        </div>
+        <form ref={formRef}onSubmit={handleSubmit} className='mt-2 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input type='text' name='name' value={form.name} onChange={handleChange} placeholder="What's your good name?"
@@ -87,12 +90,41 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'/>
           </label>
 
-          <button className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary' type='submit'>
+          <button className='bg-tertiary -mt-5 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary' type='submit'>
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className="mt-6">
+          <p className={styles.sectionSubText}>Social Media</p>
+          <ul className="mt-3 flex justify-evenly">
+            <li className="social-icon">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faYoutube} className="text-2xl sm:text-3xl lg:text-4xl" />
+              </a>
+            </li>
+            <li className="social-icon">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="text-2xl sm:text-3xl lg:text-4xl" />
+              </a>
+            </li>
+            <li className="social-icon">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} className="text-2xl sm:text-3xl lg:text-4xl" />
+              </a>
+            </li>
+            <li className="social-icon">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl lg:text-4xl" />
+              </a>
+            </li>
+            <li className="social-icon">
+              <a href="https://unity.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faUnity} className="text-2xl sm:text-3xl lg:text-4xl" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </motion.div>
-
       <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
       </motion.div>
