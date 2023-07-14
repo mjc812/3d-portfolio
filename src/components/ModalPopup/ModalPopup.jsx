@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import Modal from 'react-modal';
 import { MdClose } from 'react-icons/md';
@@ -49,7 +49,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                 <div>
                   <div className="flex flex-col space-y-3">
                     <div/>
-                    <h5 className='font-black text-white lg:text-[40px] md:text-[40px] sm:text-[40px] xs:text-[30px] text-[30px] lg:leading-snug'>
+                    <h5 className='font-black text-white lg:text-[50px] md:text-[40px] sm:text-[40px] xs:text-[30px] text-[30px] lg:leading-snug'>
                       {selectedModal}
                     </h5>
                     <div>
