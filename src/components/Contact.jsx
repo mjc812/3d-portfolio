@@ -14,8 +14,10 @@ const Contact = () => {
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div variants={slideIn("left", "tween", 0.2, 1)}  className='flex-[0.75] bg-black-100 p-8 rounded-2xl flex flex-col items-center justify-center gap-5' >
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <p className={styles.sectionSubText}>Email me</p>
-        <p className="text-white-100 text-[14px] pl-1 tracking-wider">michaelchung812@gmail.com</p>
+        <p className={styles.sectionSubText}>Email</p>
+        <a href="mailto:your-email@example.com">
+          <p className="text-white-100 text-[14px] pl-1 tracking-wider">michaelchung812@gmail.com</p>
+        </a>
         <p className={styles.sectionSubText}>Techy Stuff</p>
           <ul className="flex justify-evenly gap-5">
             <li className="social-icon">
