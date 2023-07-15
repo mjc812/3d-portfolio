@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faGithub, faUnity } from '@fortawesome/free-brands-svg-icons';
 import { socials } from "../../constants"; //hidden sm:block
+
 const Socials = ({socialsList, description}) => {
   return (
     <div className="h-full">
