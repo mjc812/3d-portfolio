@@ -81,6 +81,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+  overflow: hidden;
+}
+
+.masonry-grid-column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.masonry-grid-column > div {
+  margin-bottom: 15px;
+}
+
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2; /* fallback for old browsers */
