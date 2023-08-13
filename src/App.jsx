@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Photos } from "./components";
 
 //code belongs to https://github.com/adrianhajdin/project_3D_developer_portfolio/blob/main/src/hoc/SectionWrapper.jsx. 
 //proper citations will be added soon
@@ -21,6 +21,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Photos/>
       </div>
     </BrowserRouter>
   )

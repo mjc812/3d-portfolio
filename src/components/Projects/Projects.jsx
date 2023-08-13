@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "./hoc";
 
 const Projects = () => {
   return (
