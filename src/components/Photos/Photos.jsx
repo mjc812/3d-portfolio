@@ -2,6 +2,7 @@ import React from 'react'
 import Masonry from 'react-masonry-css'
 
 import { SectionWrapper } from "../../hoc";
+import { data } from './data';
 
 const breakpointColumnsObj = {
   default: 4,
@@ -12,14 +13,16 @@ const breakpointColumnsObj = {
 
 const Photos = () => {
   return (
-    <div>
       <Masonry
-        breakpointCols={3}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column">
-          {/* array of JSX items */}
+        breakpointCols={breakpointColumnsObj}
+        className="flex ml-[-30px]"
+        columnClassName="masonry-grid-column">
+          {data.map((item, index) => (
+            <div key={index}>
+              <img className='mb-5 w-max inline-block p-2 hover:scale-105 ease-in-out duration-300' src={item.img} />
+            </div>
+        ))}
       </Masonry>
-    </div>
   )
 }
 
