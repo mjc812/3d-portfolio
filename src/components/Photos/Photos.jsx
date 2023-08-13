@@ -24,7 +24,7 @@ const Photos = () => {
           Hobbies.
         </h2>
       </motion.div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         {data.map((item, index) => (
           <div key={index} className="rounded-md overflow-hidden">
             <img className='w-full h-auto inline-block p-2 hover:scale-105 ease-in-out duration-300' src={item.img} />
