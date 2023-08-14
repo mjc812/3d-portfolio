@@ -16,6 +16,7 @@ import {
     nodejs,
     mongodb,
     git,
+    csharp,
     figma,
     docker,
     meta,
@@ -23,9 +24,12 @@ import {
     tesla,
     shopify,
     carrent,
+    java,
     jobit,
     tripguide,
     threejs,
+    realtor,
+    unity,
   } from "../assets";
   
   export const navLinks = [
@@ -84,6 +88,18 @@ import {
       icon: javascript,
     },
     {
+      name: "CSharp",
+      icon: csharp,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Unity",
+      icon: unity,
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
@@ -113,7 +129,7 @@ import {
     {
       title: "Software Engineer",
       company_name: "Realtor.com",
-      icon: starbucks,
+      icon: realtor,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [

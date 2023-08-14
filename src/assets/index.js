@@ -19,10 +19,14 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import unity from "./tech/unity.png";
+import csharp from "./tech/csharp.png";
+import java from "./tech/java.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
+import realtor from "./company/realtor.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
@@ -38,6 +42,9 @@ export {
   web,
   github,
   menu,
+  unity,
+  csharp,
+  java,
   close,
   css,
   docker,
@@ -54,6 +61,7 @@ export {
   threejs,
   meta,
   shopify,
+  realtor,
   starbucks,
   tesla,
   carrent,
