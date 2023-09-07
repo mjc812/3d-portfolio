@@ -59,11 +59,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                   </div>
                   <div className="space-y-5">
                     <p className='text-secondary text-[17px] leading-[30px] max-w-full'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
-                      dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
-                      Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
-                      vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
-                      Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
+                      {project.long_description}
                     </p>
                     <div className="justify-center items-center">
                       <div className="child max-w-4xl mx-auto">

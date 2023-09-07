@@ -166,9 +166,11 @@ import {
   
   const projects = [
     {
-      name: "Forest",
+      name: "Woodlands",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An immersive action game made with Unity 3D and C#",
+      long_description:
+        "This is the 'Woodlands'. 'Woodlands' is a high-octane FPS game with Unity 3D  that combines elements of horror, survival, and intense action. Designed with C# and .NET, I crafted a unique and immersive gaming experience, with heavy emphasis on the fine details. Traverse a beautiful, fog-shrouded forest. Explore and loot items from abandoned buildings to help you survive. Encounter a variety of mutant creatures. Arm yourself with powerful weapons and engage in thrilling combat.",
       tags: [
         {
           name: "Unity",
@@ -184,32 +186,29 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/mjc812/The-Forest",
       achievements: [
-        "Designed the architecture, scenes, and prefabs models of a 3D game made with Unity and C#",
-        "Designed systems for audio management, AI movement and behaviors, player movement and rotation, dynamic post-processing effects, UI, and in-game item interaction for an immersive gameplay experience",
-        "Developed modular and reusable UI components that serve as building blocks for the game’s UI pages",
-        "Achieved an average of 200k Tris, 300k Verts, and 180 frames per second, representing a 86%, 95%, 64% increase in optimization from the initial import of assets, respectively",
-        "Shipped and available for demo on Unity game gallery, video demo available at (Youtube link)"
+        "Developed a complete and immersive 3D game with C and the Unity game engine",
+        "Architected intricate game mechanics including AI behaviors, 3D sound design, game-state management, in-game interactions, and player control mechanics through 60+ custom scripts",
+        "Crafted user-centric UI components for interactive game pages, prioritizing clarity and ease of use",
+        "Strategically optimized assets and code, yielding performance enhancements including: 240% drop in draw calls, 95% in verts, 86% in tris, and a 64% increase in FPS"
       ],
       socials: [
         {
           name: socials.github,
-          href: "https://www.github.com"
-        },
-        {
-          name: socials.unity,
-          href: "https://www.unity.com"
+          href: "https://github.com/mjc812/The-Forest"
         },
       ],
       embedded: {
-        href: "https://www.youtube.com/embed/la2ztR5askE"
+        href: "https://www.youtube.com/embed/wT84aCECnmc"
       }
     },
     {
       name: "Easy Linux Format",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        long_description:
+        "this is the  elf",
       tags: [
         {
           name: "react",
@@ -252,6 +251,8 @@ import {
       name: "Pymethod",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      long_description:
+        "this is pymethod",
       tags: [
         {
           name: "nextjs",
