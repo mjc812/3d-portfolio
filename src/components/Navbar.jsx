@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, resume } from "../assets";
 
 //code belongs to https://github.com/adrianhajdin/project_3D_developer_portfolio/blob/main/src/hoc/SectionWrapper.jsx. 
 //proper citations will be added soon
 
 const Navbar = () => {
+
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -51,6 +52,11 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li className={`${"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => setActive(nav.title)}>
+            <a href={resume} target="_blank" rel="noopener noreferrer" className="bg-[#915EFF] text-white py-2 px-4 rounded">
+              View Resume (PDF)
+            </a>
+          </li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt='menu' className='w-[28px] h-[28px] object-contain' 
