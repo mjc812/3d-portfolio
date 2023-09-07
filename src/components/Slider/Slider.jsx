@@ -2,7 +2,7 @@ import React from 'react'
 import { data } from './data';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-const Slider = () => {
+const Slider = ({ photos }) => {
   const slideLeft = () => {
     var slider = document.getElementById('slider');
     slider.scrollLeft = slider.scrollLeft - 500;
@@ -21,13 +21,13 @@ const Slider = () => {
         />
       </div>
       <div className='min-h-72 max-h-72 pt-3 overflow-x-scroll overflow-y-hidden whitespace-nowrap scrollbar-hide' id='slider' >
-        {data.map((item, index) => (
-        <img
-          key={index}
-          className='w-[250px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
-          src={item.img}
-          alt='/'
-        />
+        {photos.map((photo, index) => (
+          <img
+            key={index}
+            className='w-[250px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
+            src={photo}
+            alt='/'
+          />
         ))}
       </div>
       <div>

@@ -7,22 +7,13 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     csharp,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     java,
     jobit,
@@ -30,6 +21,7 @@ import {
     threejs,
     realtor,
     unity,
+    woodlands1
   } from "../assets";
   
   export const navLinks = [
@@ -185,6 +177,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      photos: [
+        woodlands1
+      ],
       image: carrent,
       source_code_link: "https://github.com/mjc812/The-Forest",
       achievements: [
@@ -222,6 +217,9 @@ import {
           name: "scss",
           color: "pink-text-gradient",
         },
+      ],
+      photos: [
+        woodlands1
       ],
       image: jobit,
       source_code_link: "https://github.com/",
@@ -266,6 +264,9 @@ import {
           name: "css",
           color: "pink-text-gradient",
         },
+      ],
+      photos: [
+        woodlands1
       ],
       image: tripguide,
       source_code_link: "https://github.com/",

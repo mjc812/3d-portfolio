@@ -36,6 +36,8 @@ import tripguide from "./tripguide.png";
 
 import resume from "./2023_Resume.pdf";
 
+import woodlands1 from "./projects/woodlands/woodlands1.jpg";
+
 export {
   logo,
   backend,
@@ -69,5 +71,7 @@ export {
   carrent,
   jobit,
   tripguide,
-  resume
+  resume,
+
+  woodlands1
 };

@@ -11,7 +11,6 @@ import Slider from "../Slider";
 import Socials from "../Socials";
 import Video from "../Video";
 
-
 const modalStyles = {
   content: {
     top: '50%',
@@ -45,7 +44,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           if (project.name === selectedModal) {
             return (
               <div key={index} className="flex flex-col">
-                <Slider/>
+                <Slider photos={project.photos}/>
                 <div>
                   <div className="flex flex-col space-y-3">
                     <div/>

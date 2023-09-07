@@ -9,6 +9,8 @@ import { projects } from "../constants";
 import ModalPopup from "./ModalPopup/ModalPopup";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import { woodlands1 } from "../assets";
+
 const ProjectCard = ({ openModal, index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -21,7 +23,7 @@ const ProjectCard = ({ openModal, index, name, description, tags, image, source_
           }}
         >
           <div className='relative w-full h-[230px]'>
-            <img src={image} alt='project_image' className='w-full h-full object-cover rounded-2xl'/>
+            <img src={woodlands1} alt='project_image' className='w-full h-full object-cover rounded-2xl'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'/>
           </div>
 
