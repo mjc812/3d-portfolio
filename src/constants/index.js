@@ -49,10 +49,6 @@ import {
       id: "contact",
       title: "Contact",
     },
-    {
-      id: "photos",
-      title: "Cool photos",
-    },
   ];
   
   const services = [

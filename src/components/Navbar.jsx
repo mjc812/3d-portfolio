@@ -9,6 +9,8 @@ import { logo, menu, close } from "../assets";
 //proper citations will be added soon
 
 const Navbar = () => {
+  const resumePdfUrl = 'path_to_your_resume.pdf';
+
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -51,6 +53,11 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li className={`${"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => setActive(nav.title)}>
+            <a href={resumePdfUrl} target="_blank" rel="noopener noreferrer" className="bg-[#915EFF] text-white py-2 px-4 rounded">
+              View Resume (PDF)
+            </a>
+          </li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt='menu' className='w-[28px] h-[28px] object-contain' 
