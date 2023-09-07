@@ -9,7 +9,7 @@ import { logo, menu, close } from "../assets";
 //proper citations will be added soon
 
 const Navbar = () => {
-  const resumePdfUrl = 'path_to_your_resume.pdf';
+  const resumePdfUrl = 'src/assets/2023_Resume.pdf';
 
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
