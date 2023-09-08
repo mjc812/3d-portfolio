@@ -48,11 +48,12 @@ import woodlands_7 from "./projects/woodlands/woodlands_7.jpg";
 import woodlands_8 from "./projects/woodlands/woodlands_8.jpg";
 
 import elf_thumbnail from "./projects/ELF/elf_thumbnail.jpg";
+import elf_0 from "./projects/ELF/elf_0.jpg";
+import elf_1 from "./projects/ELF/elf_1.jpg";
+import elf_2 from "./projects/ELF/elf_2.jpg";
 import elf_3 from "./projects/ELF/elf_3.jpg";
 import elf_4 from "./projects/ELF/elf_4.jpg";
 import elf_5 from "./projects/ELF/elf_5.jpg";
-import elf_6 from "./projects/ELF/elf_6.jpg";
-import elf_7 from "./projects/ELF/elf_7.jpg";
 
 export {
   logo,
@@ -100,10 +101,11 @@ export {
   woodlands_7,
   woodlands_8,
 
+  elf_0,
+  elf_1,
+  elf_2,
   elf_3,
   elf_4,
   elf_5,
-  elf_6,
-  elf_7,
   elf_thumbnail
 };

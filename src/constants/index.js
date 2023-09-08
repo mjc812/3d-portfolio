@@ -32,11 +32,12 @@ import {
     woodlands_7,
     woodlands_8,
     elf_thumbnail,
+    elf_0,
+    elf_1,
+    elf_2,
     elf_3,
     elf_4,
     elf_5,
-    elf_6,
-    elf_7,
     } from "../assets";
   
   export const navLinks = [
@@ -125,7 +126,8 @@ import {
     linkedIn: "LinkedIn",
     youTube: "YouTube",
     reddit: "Reddit",
-    unity: "Unity"
+    unity: "Unity",
+    documentation: "Documentation"
   }
   
   const experiences = [
@@ -242,11 +244,12 @@ import {
         },
       ],
       photos: [
+        elf_0,
+        elf_1,
+        elf_2,
         elf_3,
         elf_4,
         elf_5,
-        elf_6,
-        elf_7,
       ],
       image: elf_thumbnail,
       source_code_link: "https://github.com/",
@@ -261,7 +264,11 @@ import {
       socials: [
         {
           name: socials.github,
-          href: "https://www.github.com"
+          href: "https://github.com/mjc812/Easy-Linux-Format"
+        },
+        {
+          name: socials.documentation,
+          href: "https://www.notion.so/ELF-Cheat-Sheet-5499fa84b8b5460e991a75b3d6f95dfc#bab23b7c92cb43c3bbd428c71735a9e0"
         }
       ]
     },
