@@ -146,11 +146,13 @@ import {
       company_name: "Realtor.com",
       icon: realtor,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Jan 2020 - Aug 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Responsible for creating modular, high-performance, and scalable UI components that serve as building-blocks for company products.",
+        "Emphasized thorough documentation to provide easy and effective use of UI components for developers across 20 teams in Realtor.com.",
+        "Resulted in shared usage of UI components across 40+ production applications that service 85+ million users every month.",
+        "Provided ongoing support for maintenance, features, system improvements, and bugs of UI components.",
+        "Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     }
