@@ -14,11 +14,13 @@ import {
     nodejs,
     git,
     csharp,
-    carrent,
     java,
-    jobit,
+    npm,
     tripguide,
     threejs,
+    intellij,
+    github,
+    jira,
     realtor,
     unity,
     woodlands_thumbnail,
@@ -80,6 +82,22 @@ import {
   
   const technologies = [
     {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "CSharp",
+      icon: csharp,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -88,32 +106,24 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "npm",
+      icon: npm,
     },
     {
-      name: "CSharp",
-      icon: csharp,
-    },
-    {
-      name: "Java",
-      icon: java,
+      name: "Node JS",
+      icon: nodejs,
     },
     {
       name: "Unity",
       icon: unity,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "IntelliJ",
+      icon: intellij,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
+      name: "GitHub",
+      icon: github,
     },
     {
       name: "git",
