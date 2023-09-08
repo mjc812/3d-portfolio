@@ -47,6 +47,12 @@ import woodlands_6 from "./projects/woodlands/woodlands_6.jpg";
 import woodlands_7 from "./projects/woodlands/woodlands_7.jpg";
 import woodlands_8 from "./projects/woodlands/woodlands_8.jpg";
 
+import elf_3 from "./projects/ELF/elf_3.jpg";
+import elf_4 from "./projects/ELF/elf_4.jpg";
+import elf_5 from "./projects/ELF/elf_5.jpg";
+import elf_6 from "./projects/ELF/elf_6.jpg";
+import elf_7 from "./projects/ELF/elf_7.jpg";
+
 export {
   logo,
   backend,
@@ -91,5 +97,11 @@ export {
   woodlands_5,
   woodlands_6,
   woodlands_7,
-  woodlands_8
+  woodlands_8,
+
+  elf_3,
+  elf_4,
+  elf_5,
+  elf_6,
+  elf_7,
 };

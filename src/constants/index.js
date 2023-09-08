@@ -30,7 +30,13 @@ import {
     woodlands_5,
     woodlands_6,
     woodlands_7,
-    woodlands_8
+    woodlands_8,
+
+    elf_3,
+    elf_4,
+    elf_5,
+    elf_6,
+    elf_7,
     } from "../assets";
   
   export const navLinks = [
@@ -174,11 +180,11 @@ import {
         "This is the 'Woodlands'. 'Woodlands' is a high-octane FPS game with Unity 3D  that combines elements of horror, survival, and intense action. Designed with C# and .NET, I crafted a unique and immersive gaming experience, with heavy emphasis on the fine details. Traverse a beautiful, fog-shrouded forest. Explore and loot items from abandoned buildings to help you survive. Encounter a variety of mutant creatures. Arm yourself with powerful weapons and engage in thrilling combat.",
       tags: [
         {
-          name: "Unity",
+          name: "unity",
           color: "blue-text-gradient",
         },
         {
-          name: "C#",
+          name: "C-Sharp",
           color: "green-text-gradient",
         },
         {
@@ -218,34 +224,39 @@ import {
     {
       name: "Easy Linux Format",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
         long_description:
-        "this is the  elf",
+        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
       tags: [
+        {
+          name: "java",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "orange-text-gradient",
+        },
         {
           name: "react",
           color: "blue-text-gradient",
         },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
       photos: [
-        woodlands_0
+        elf_3,
+        elf_4,
+        elf_5,
+        elf_6,
+        elf_7,
       ],
       image: jobit,
       source_code_link: "https://github.com/",
       achievements: [
-        "Designed and wrote domain specific language to abstract away linux commands with a more intuitive grammar and syntactic system",
-        "Adhered to good domain specific language design by keeping the language self-contained, abstraction gradient low, conceptual model simple, and fully documented",
-        "Minimized the diffuseness while maximizing the consistency between methods and features of the language",
-        "Tokenized raw user input into a list of token, then parsed the list into a validated AST tree using a nodes to represent different blocks of the language",
-        "Performed a dynamic analysis using the visitor pattern on the generated AST tree to execute the code produced by the user"
+        "Designed and implemented a domain-specific language (DSL) and grammar to abstract away Linux commands",
+        "Converted user input into an AST tree using nodes to represent different blocks of the language",
+        "Utilized the Visitor pattern for a dynamic analysis and execution of the user’s code",
+        "Organized and oversaw user studies to record feedback and iteratively improve the language design",
+        "Maintained sound DSL design principles by ensuring self-containment, a low abstraction gradient, a simplified conceptual model, and comprehensive documentation.",
+        "Regularly organized and led collaborative development meetings with cross-functional teams to ensure project progress, identify and address challenges, and foster a culture of knowledge sharing."
       ],
       socials: [
         {
@@ -265,16 +276,16 @@ import {
     {
       name: "Pymethod",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
       long_description:
-        "this is pymethod",
+        "Pymethod was a utility program that I spearheaded with the goal of helping python developers identify hotspots in their code. It quickly traces the control flow of given programs, and visualizes the analysis data using a centrality graph.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "python",
           color: "green-text-gradient",
         },
         {
@@ -283,30 +294,22 @@ import {
         },
       ],
       photos: [
-        woodlands_0
+        
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
       achievements: [
-        "Spearheaded a team to develop a full-stack web application that performs a static and online dynamic analysis on python programs to trace its control flow, and renders the data visually using a centrality graph",
-        "Laid the technology stack and designed the architecture of the project",
-        "Managed time-sensitive updates, content changes and bug fixes that were implemented after multiple user studies",
-        "Engaged in 1:1 and group discussions to ensure that all other developers were caught up with the latest updates",
-        "Implemented the static and dynamic analyses to parse a given program, then implemented RESTful API points to communicate the data from the analyses"
+        "Spearheaded a team to develop a full-stack application that traces the control flow of python program to identify hotspots",
+        "Established the technology stack and the project’s architectural framework",
+        "Implemented static and online dynamic analyses to evaluate a given python program",
+        "Established RESTful API points to communicate analyses data",
+        "Implemented a centrality graph in React on the front-end to visualize data analysis"
       ],
       socials: [
         {
           name: socials.github,
           href: "https://www.github.com"
-        },
-        {
-          name: socials.youTube,
-          href: "https://www.youtube.com"
-        },
-        {
-          name: socials.unity,
-          href: "https://www.unity.com"
-        },
+        }
       ]
     },
   ];
