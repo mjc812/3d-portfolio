@@ -21,6 +21,7 @@ import {
     threejs,
     realtor,
     unity,
+    woodlands_thumbnail,
     woodlands_0,
     woodlands_1,
     woodlands_2,
@@ -196,7 +197,7 @@ import {
         woodlands_7,
         woodlands_8      
       ],
-      image: carrent,
+      image: woodlands_thumbnail,
       source_code_link: "https://github.com/mjc812/The-Forest",
       achievements: [
         "Developed a complete and immersive 3D game with C and the Unity game engine",

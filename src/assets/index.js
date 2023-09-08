@@ -36,6 +36,7 @@ import tripguide from "./tripguide.png";
 
 import resume from "./2023_Resume.pdf";
 
+import woodlands_thumbnail from "./projects/woodlands/thumbnail.jpg";
 import woodlands_0 from "./projects/woodlands/woodlands_0.jpg";
 import woodlands_1 from "./projects/woodlands/woodlands_1.jpg";
 import woodlands_2 from "./projects/woodlands/woodlands_2.jpg";
@@ -81,6 +82,7 @@ export {
   tripguide,
   resume,
 
+  woodlands_thumbnail,
   woodlands_0,
   woodlands_1,
   woodlands_2,
