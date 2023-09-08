@@ -47,6 +47,7 @@ import woodlands_6 from "./projects/woodlands/woodlands_6.jpg";
 import woodlands_7 from "./projects/woodlands/woodlands_7.jpg";
 import woodlands_8 from "./projects/woodlands/woodlands_8.jpg";
 
+import elf_thumbnail from "./projects/ELF/elf_thumbnail.jpg";
 import elf_3 from "./projects/ELF/elf_3.jpg";
 import elf_4 from "./projects/ELF/elf_4.jpg";
 import elf_5 from "./projects/ELF/elf_5.jpg";
@@ -104,4 +105,5 @@ export {
   elf_5,
   elf_6,
   elf_7,
+  elf_thumbnail
 };

@@ -31,7 +31,7 @@ import {
     woodlands_6,
     woodlands_7,
     woodlands_8,
-
+    elf_thumbnail,
     elf_3,
     elf_4,
     elf_5,
@@ -248,7 +248,7 @@ import {
         elf_6,
         elf_7,
       ],
-      image: jobit,
+      image: elf_thumbnail,
       source_code_link: "https://github.com/",
       achievements: [
         "Designed and implemented a domain-specific language (DSL) and grammar to abstract away Linux commands",
@@ -262,15 +262,7 @@ import {
         {
           name: socials.github,
           href: "https://www.github.com"
-        },
-        {
-          name: socials.youTube,
-          href: "https://www.youtube.com"
-        },
-        {
-          name: socials.unity,
-          href: "https://www.unity.com"
-        },
+        }
       ]
     },
     {
