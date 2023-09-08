@@ -224,9 +224,9 @@ import {
     {
       name: "Easy Linux Format",
       description:
-        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
+        "A domain specific language designed to abstract away complex linux commands.",
         long_description:
-        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
+        "Easy Linux Format (ESL) is a domain-specific language (DSL) designed to replace complex Linux commands for both new and experienced users. This DSL abstract away Linux commands with intuitive and English-oriented instructions, making system management accessible to a wider audience.",
       tags: [
         {
           name: "java",
@@ -251,10 +251,10 @@ import {
       image: elf_thumbnail,
       source_code_link: "https://github.com/",
       achievements: [
-        "Designed and implemented a domain-specific language (DSL) and grammar to abstract away Linux commands",
-        "Converted user input into an AST tree using nodes to represent different blocks of the language",
-        "Utilized the Visitor pattern for a dynamic analysis and execution of the user’s code",
-        "Organized and oversaw user studies to record feedback and iteratively improve the language design",
+        "Designed and implemented a domain-specific language and grammar to abstract away Linux commands.",
+        "Converted user input into an AST tree using nodes to represent different blocks of the language.",
+        "Utilized the Visitor pattern for a dynamic analysis and execution of the user’s code.",
+        "Organized and oversaw user studies to record feedback and iteratively improve the language design.",
         "Maintained sound DSL design principles by ensuring self-containment, a low abstraction gradient, a simplified conceptual model, and comprehensive documentation.",
         "Regularly organized and led collaborative development meetings with cross-functional teams to ensure project progress, identify and address challenges, and foster a culture of knowledge sharing."
       ],
