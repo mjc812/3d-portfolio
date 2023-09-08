@@ -36,6 +36,25 @@ import tripguide from "./tripguide.png";
 
 import resume from "./2023_Resume.pdf";
 
+import woodlands_thumbnail from "./projects/woodlands/thumbnail.jpg";
+import woodlands_0 from "./projects/woodlands/woodlands_0.jpg";
+import woodlands_1 from "./projects/woodlands/woodlands_1.jpg";
+import woodlands_2 from "./projects/woodlands/woodlands_2.jpg";
+import woodlands_3 from "./projects/woodlands/woodlands_3.jpg";
+import woodlands_4 from "./projects/woodlands/woodlands_4.jpg";
+import woodlands_5 from "./projects/woodlands/woodlands_5.jpg";
+import woodlands_6 from "./projects/woodlands/woodlands_6.jpg";
+import woodlands_7 from "./projects/woodlands/woodlands_7.jpg";
+import woodlands_8 from "./projects/woodlands/woodlands_8.jpg";
+
+import elf_thumbnail from "./projects/ELF/elf_thumbnail.jpg";
+import elf_0 from "./projects/ELF/elf_0.jpg";
+import elf_1 from "./projects/ELF/elf_1.jpg";
+import elf_2 from "./projects/ELF/elf_2.jpg";
+import elf_3 from "./projects/ELF/elf_3.jpg";
+import elf_4 from "./projects/ELF/elf_4.jpg";
+import elf_5 from "./projects/ELF/elf_5.jpg";
+
 export {
   logo,
   backend,
@@ -69,5 +88,24 @@ export {
   carrent,
   jobit,
   tripguide,
-  resume
+  resume,
+
+  woodlands_thumbnail,
+  woodlands_0,
+  woodlands_1,
+  woodlands_2,
+  woodlands_3,
+  woodlands_4,
+  woodlands_5,
+  woodlands_6,
+  woodlands_7,
+  woodlands_8,
+
+  elf_0,
+  elf_1,
+  elf_2,
+  elf_3,
+  elf_4,
+  elf_5,
+  elf_thumbnail
 };

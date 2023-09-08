@@ -7,22 +7,13 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     csharp,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     java,
     jobit,
@@ -30,7 +21,24 @@ import {
     threejs,
     realtor,
     unity,
-  } from "../assets";
+    woodlands_thumbnail,
+    woodlands_0,
+    woodlands_1,
+    woodlands_2,
+    woodlands_3,
+    woodlands_4,
+    woodlands_5,
+    woodlands_6,
+    woodlands_7,
+    woodlands_8,
+    elf_thumbnail,
+    elf_0,
+    elf_1,
+    elf_2,
+    elf_3,
+    elf_4,
+    elf_5,
+    } from "../assets";
   
   export const navLinks = [
     {
@@ -118,7 +126,8 @@ import {
     linkedIn: "LinkedIn",
     youTube: "YouTube",
     reddit: "Reddit",
-    unity: "Unity"
+    unity: "Unity",
+    documentation: "Documentation"
   }
   
   const experiences = [
@@ -166,16 +175,18 @@ import {
   
   const projects = [
     {
-      name: "Forest",
+      name: "Woodlands",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An immersive action game made with Unity 3D and C#",
+      long_description:
+        "This is the 'Woodlands'. 'Woodlands' is a high-octane FPS game with Unity 3D  that combines elements of horror, survival, and intense action. Designed with C# and .NET, I crafted a unique and immersive gaming experience, with heavy emphasis on the fine details. Traverse a beautiful, fog-shrouded forest. Explore and loot items from abandoned buildings to help you survive. Encounter a variety of mutant creatures. Arm yourself with powerful weapons and engage in thrilling combat.",
       tags: [
         {
-          name: "Unity",
+          name: "unity",
           color: "blue-text-gradient",
         },
         {
-          name: "C#",
+          name: "C-Sharp",
           color: "green-text-gradient",
         },
         {
@@ -183,82 +194,97 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      photos: [
+        woodlands_0,
+        woodlands_1,
+        woodlands_2,
+        woodlands_3,
+        woodlands_4,
+        woodlands_5,
+        woodlands_6,
+        woodlands_7,
+        woodlands_8      
+      ],
+      image: woodlands_thumbnail,
+      source_code_link: "https://github.com/mjc812/The-Forest",
       achievements: [
-        "Designed the architecture, scenes, and prefabs models of a 3D game made with Unity and C#",
-        "Designed systems for audio management, AI movement and behaviors, player movement and rotation, dynamic post-processing effects, UI, and in-game item interaction for an immersive gameplay experience",
-        "Developed modular and reusable UI components that serve as building blocks for the game’s UI pages",
-        "Achieved an average of 200k Tris, 300k Verts, and 180 frames per second, representing a 86%, 95%, 64% increase in optimization from the initial import of assets, respectively",
-        "Shipped and available for demo on Unity game gallery, video demo available at (Youtube link)"
+        "Developed a complete and immersive 3D game with C and the Unity game engine",
+        "Architected intricate game mechanics including AI behaviors, 3D sound design, game-state management, in-game interactions, and player control mechanics through 60+ custom scripts",
+        "Crafted user-centric UI components for interactive game pages, prioritizing clarity and ease of use",
+        "Strategically optimized assets and code, yielding performance enhancements including: 240% drop in draw calls, 95% in verts, 86% in tris, and a 64% increase in FPS"
       ],
       socials: [
         {
           name: socials.github,
-          href: "https://www.github.com"
-        },
-        {
-          name: socials.unity,
-          href: "https://www.unity.com"
+          href: "https://github.com/mjc812/The-Forest"
         },
       ],
       embedded: {
-        href: "https://www.youtube.com/embed/la2ztR5askE"
+        href: "https://www.youtube.com/embed/wT84aCECnmc"
       }
     },
     {
       name: "Easy Linux Format",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A domain specific language designed to abstract away complex linux commands.",
+        long_description:
+        "Easy Linux Format (ESL) is a domain-specific language (DSL) designed to replace complex Linux commands for both new and experienced users. This DSL abstract away Linux commands with intuitive and English-oriented instructions, making system management accessible to a wider audience.",
+      tags: [
+        {
+          name: "java",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+      ],
+      photos: [
+        elf_0,
+        elf_1,
+        elf_2,
+        elf_3,
+        elf_4,
+        elf_5,
+      ],
+      image: elf_thumbnail,
+      source_code_link: "https://github.com/",
+      achievements: [
+        "Designed and implemented a domain-specific language and grammar to abstract away Linux commands.",
+        "Converted user input into an AST tree using nodes to represent different blocks of the language.",
+        "Utilized the Visitor pattern for a dynamic analysis and execution of the user’s code.",
+        "Organized and oversaw user studies to record feedback and iteratively improve the language design.",
+        "Maintained sound DSL design principles by ensuring self-containment, a low abstraction gradient, a simplified conceptual model, and comprehensive documentation.",
+        "Regularly organized and led collaborative development meetings with cross-functional teams to ensure project progress, identify and address challenges, and foster a culture of knowledge sharing."
+      ],
+      socials: [
+        {
+          name: socials.github,
+          href: "https://github.com/mjc812/Easy-Linux-Format"
+        },
+        {
+          name: socials.documentation,
+          href: "https://www.notion.so/ELF-Cheat-Sheet-5499fa84b8b5460e991a75b3d6f95dfc#bab23b7c92cb43c3bbd428c71735a9e0"
+        }
+      ]
+    },
+    {
+      name: "Pymethod",
+      description:
+        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
+      long_description:
+        "Pymethod was a utility program that I spearheaded with the goal of helping python developers identify hotspots in their code. It quickly traces the control flow of given programs, and visualizes the analysis data using a centrality graph.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-      achievements: [
-        "Designed and wrote domain specific language to abstract away linux commands with a more intuitive grammar and syntactic system",
-        "Adhered to good domain specific language design by keeping the language self-contained, abstraction gradient low, conceptual model simple, and fully documented",
-        "Minimized the diffuseness while maximizing the consistency between methods and features of the language",
-        "Tokenized raw user input into a list of token, then parsed the list into a validated AST tree using a nodes to represent different blocks of the language",
-        "Performed a dynamic analysis using the visitor pattern on the generated AST tree to execute the code produced by the user"
-      ],
-      socials: [
-        {
-          name: socials.github,
-          href: "https://www.github.com"
-        },
-        {
-          name: socials.youTube,
-          href: "https://www.youtube.com"
-        },
-        {
-          name: socials.unity,
-          href: "https://www.unity.com"
-        },
-      ]
-    },
-    {
-      name: "Pymethod",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "python",
           color: "green-text-gradient",
         },
         {
@@ -266,28 +292,23 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      photos: [
+        
+      ],
       image: tripguide,
       source_code_link: "https://github.com/",
       achievements: [
-        "Spearheaded a team to develop a full-stack web application that performs a static and online dynamic analysis on python programs to trace its control flow, and renders the data visually using a centrality graph",
-        "Laid the technology stack and designed the architecture of the project",
-        "Managed time-sensitive updates, content changes and bug fixes that were implemented after multiple user studies",
-        "Engaged in 1:1 and group discussions to ensure that all other developers were caught up with the latest updates",
-        "Implemented the static and dynamic analyses to parse a given program, then implemented RESTful API points to communicate the data from the analyses"
+        "Spearheaded a team to develop a full-stack application that traces the control flow of python program to identify hotspots",
+        "Established the technology stack and the project’s architectural framework",
+        "Implemented static and online dynamic analyses to evaluate a given python program",
+        "Established RESTful API points to communicate analyses data",
+        "Implemented a centrality graph in React on the front-end to visualize data analysis"
       ],
       socials: [
         {
           name: socials.github,
           href: "https://www.github.com"
-        },
-        {
-          name: socials.youTube,
-          href: "https://www.youtube.com"
-        },
-        {
-          name: socials.unity,
-          href: "https://www.unity.com"
-        },
+        }
       ]
     },
   ];

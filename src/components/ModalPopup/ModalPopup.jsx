@@ -11,7 +11,6 @@ import Slider from "../Slider";
 import Socials from "../Socials";
 import Video from "../Video";
 
-
 const modalStyles = {
   content: {
     top: '50%',
@@ -45,7 +44,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
           if (project.name === selectedModal) {
             return (
               <div key={index} className="flex flex-col">
-                <Slider/>
+                <Slider photos={project.photos}/>
                 <div>
                   <div className="flex flex-col space-y-3">
                     <div/>
@@ -59,11 +58,7 @@ const ModalPopup = ({ isOpen, onRequestClose, selectedModal, closeModal }) => {
                   </div>
                   <div className="space-y-5">
                     <p className='text-secondary text-[17px] leading-[30px] max-w-full'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, sem eget fermentum finibus, 
-                      dui justo consectetur erat, non cursus turpis tortor non sapien. In hac habitasse platea dictumst. 
-                      Pellentesque elit lectus, tristique viverra volutpat sed, gravida convallis enim. Maecenas cursus augue 
-                      vel eros cursus interdum. Ut et purus ac ante semper elementum sit amet nec risus. 
-                      Ut faucibus at urna sodales maximus. Sed id consectetur dolor.
+                      {project.long_description}
                     </p>
                     <div className="justify-center items-center">
                       <div className="child max-w-4xl mx-auto">
