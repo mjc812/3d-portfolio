@@ -21,8 +21,16 @@ import {
     threejs,
     realtor,
     unity,
-    woodlands1
-  } from "../assets";
+    woodlands_0,
+    woodlands_1,
+    woodlands_2,
+    woodlands_3,
+    woodlands_4,
+    woodlands_5,
+    woodlands_6,
+    woodlands_7,
+    woodlands_8
+    } from "../assets";
   
   export const navLinks = [
     {
@@ -178,7 +186,15 @@ import {
         },
       ],
       photos: [
-        woodlands1
+        woodlands_0,
+        woodlands_1,
+        woodlands_2,
+        woodlands_3,
+        woodlands_4,
+        woodlands_5,
+        woodlands_6,
+        woodlands_7,
+        woodlands_8      
       ],
       image: carrent,
       source_code_link: "https://github.com/mjc812/The-Forest",
@@ -219,7 +235,7 @@ import {
         },
       ],
       photos: [
-        woodlands1
+        woodlands_0
       ],
       image: jobit,
       source_code_link: "https://github.com/",
@@ -266,7 +282,7 @@ import {
         },
       ],
       photos: [
-        woodlands1
+        woodlands_0
       ],
       image: tripguide,
       source_code_link: "https://github.com/",

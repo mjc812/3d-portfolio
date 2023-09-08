@@ -3,13 +3,10 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import ModalPopup from "./ModalPopup/ModalPopup";
 import { fadeIn, textVariant } from "../utils/motion";
-
-import { woodlands1 } from "../assets";
 
 const ProjectCard = ({ openModal, index, name, description, tags, image, source_code_link }) => {
   return (
@@ -23,7 +20,7 @@ const ProjectCard = ({ openModal, index, name, description, tags, image, source_
           }}
         >
           <div className='relative w-full h-[230px]'>
-            <img src={woodlands1} alt='project_image' className='w-full h-full object-cover rounded-2xl'/>
+            <img src={image} alt='project_image' className='w-full h-full object-cover rounded-2xl'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'/>
           </div>
 

@@ -36,7 +36,15 @@ import tripguide from "./tripguide.png";
 
 import resume from "./2023_Resume.pdf";
 
-import woodlands1 from "./projects/woodlands/woodlands1.jpg";
+import woodlands_0 from "./projects/woodlands/woodlands_0.jpg";
+import woodlands_1 from "./projects/woodlands/woodlands_1.jpg";
+import woodlands_2 from "./projects/woodlands/woodlands_2.jpg";
+import woodlands_3 from "./projects/woodlands/woodlands_3.jpg";
+import woodlands_4 from "./projects/woodlands/woodlands_4.jpg";
+import woodlands_5 from "./projects/woodlands/woodlands_5.jpg";
+import woodlands_6 from "./projects/woodlands/woodlands_6.jpg";
+import woodlands_7 from "./projects/woodlands/woodlands_7.jpg";
+import woodlands_8 from "./projects/woodlands/woodlands_8.jpg";
 
 export {
   logo,
@@ -73,5 +81,13 @@ export {
   tripguide,
   resume,
 
-  woodlands1
+  woodlands_0,
+  woodlands_1,
+  woodlands_2,
+  woodlands_3,
+  woodlands_4,
+  woodlands_5,
+  woodlands_6,
+  woodlands_7,
+  woodlands_8
 };
