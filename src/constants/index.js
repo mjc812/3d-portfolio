@@ -40,6 +40,11 @@ import {
     elf_3,
     elf_4,
     elf_5,
+    scuba_0,
+    travel_0,
+    hike_0,
+    hike_1,
+    soccer_0,
     } from "../assets";
   
   export const navLinks = [
@@ -185,6 +190,18 @@ import {
     },
   ];
   
+  const hobbies = [
+    scuba_0,
+    scuba_0,
+    scuba_0,
+    travel_0,
+    hike_1,
+    soccer_0,
+    hike_0,
+    hike_0,
+    hike_0,
+  ]
+
   const projects = [
     {
       name: "Woodlands",
@@ -325,4 +342,4 @@ import {
     },
   ];
   
-  export { socials, services, technologies, experiences, testimonials, projects };
+  export { hobbies, socials, services, technologies, experiences, testimonials, projects };
