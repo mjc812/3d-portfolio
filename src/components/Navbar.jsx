@@ -37,7 +37,7 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0); 
           }}>
-            <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            <p className='text-white text-[25px] font-bold cursor-pointer flex'>
               Michael Chung &nbsp;
             </p>
         </Link>
