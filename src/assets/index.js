@@ -58,6 +58,12 @@ import elf_3 from "./projects/ELF/elf_3.jpg";
 import elf_4 from "./projects/ELF/elf_4.jpg";
 import elf_5 from "./projects/ELF/elf_5.jpg";
 
+import scuba_0 from "./hobbies/scuba_0.png";
+import travel_0 from "./hobbies/travel_0.jpg";
+import hike_0 from "./hobbies/hike_0.jpg";
+import hike_1 from "./hobbies/hike_1.jpg";
+import soccer_0 from "./hobbies/soccer_0.jpeg";
+
 export {
   logo,
   backend,
@@ -113,5 +119,11 @@ export {
   elf_3,
   elf_4,
   elf_5,
-  elf_thumbnail
+  elf_thumbnail,
+
+  scuba_0,
+  travel_0,
+  hike_0,
+  hike_1,
+  soccer_0,
 };
