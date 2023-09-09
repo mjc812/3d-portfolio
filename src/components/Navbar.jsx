@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close, resume } from "../assets";
+import { computer_no_bg, menu, close, resume } from "../assets";
 
 //code belongs to https://github.com/adrianhajdin/project_3D_developer_portfolio/blob/main/src/hoc/SectionWrapper.jsx. 
 //proper citations will be added soon
@@ -37,9 +37,9 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0); 
           }}>
-            <img src={logo} alt='logo' className=' w-14 h-14 object-contain' />
-            <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-              Michael Jung &nbsp;
+            <img src={computer_no_bg} alt='logo' className=' w-10 h-10 object-contain' />
+            <p className='text-white text-[25px] font-bold cursor-pointer flex'>
+              Michael Chung &nbsp;
             </p>
         </Link>
         <ul className='list-none hidden lg:flex flex-row gap-10'>
