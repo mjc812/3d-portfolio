@@ -5,6 +5,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import computer_no_bg from "./computer_no_bg.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -101,6 +102,8 @@ export {
   jobit,
   tripguide,
   resume,
+
+  computer_no_bg,
 
   woodlands_thumbnail,
   woodlands_0,
