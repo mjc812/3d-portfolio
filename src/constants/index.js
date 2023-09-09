@@ -40,11 +40,18 @@ import {
     elf_3,
     elf_4,
     elf_5,
-    scuba_0,
-    travel_0,
-    hike_0,
-    hike_1,
-    soccer_0,
+    hobby_0,
+    hobby_1,
+    hobby_2,
+    hobby_3,
+    hobby_4,
+    hobby_5,
+    hobby_6,
+    hobby_7,
+    hobby_8,
+    hobby_9,
+    hobby_10,
+    hobby_11,
     } from "../assets";
   
   export const navLinks = [
@@ -191,15 +198,18 @@ import {
   ];
   
   const hobbies = [
-    scuba_0,
-    scuba_0,
-    scuba_0,
-    travel_0,
-    hike_1,
-    soccer_0,
-    hike_0,
-    hike_0,
-    hike_0,
+    hobby_0,
+    hobby_1,
+    hobby_2,
+    hobby_3,
+    hobby_4,
+    hobby_5,
+    hobby_6,
+    hobby_7,
+    hobby_8,
+    hobby_9,
+    hobby_10,
+    hobby_11,
   ]
 
   const projects = [
