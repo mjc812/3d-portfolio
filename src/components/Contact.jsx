@@ -18,34 +18,21 @@ const Contact = () => {
         <a href="mailto:your-email@example.com">
           <p className="text-white-100 text-[14px] pl-1 tracking-wider">michaelchung812@gmail.com</p>
         </a>
-        <p className={styles.sectionSubText}>Techy Stuff</p>
-          <ul className="flex justify-evenly gap-5">
-            <li className="social-icon">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <p className={styles.sectionSubText}>Stay In Touch</p>
+        <ul className="flex justify-evenly gap-5">
+          <li className="social-icon">
+              <a href="https://github.com/mjc812" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="text-2xl sm:text-3xl lg:text-4xl" />
               </a>
             </li>
-            <li className="social-icon">
-              <a href="https://unity.com" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faUnity} className="text-2xl sm:text-3xl lg:text-4xl" />
-              </a>
-            </li>
-          </ul>
-        <p className={styles.sectionSubText}>Social Media</p>
-        <ul className="flex justify-evenly gap-5">
           <li className="social-icon">
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/channel/UC0xmojygZQFUhZUrRlByRUA" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faYoutube} className="text-2xl sm:text-3xl lg:text-4xl" />
             </a>
           </li>
           <li className="social-icon">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/michaelchung812" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} className="text-2xl sm:text-3xl lg:text-4xl" />
-            </a>
-          </li>
-          <li className="social-icon">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl lg:text-4xl" />
             </a>
           </li>
         </ul>
