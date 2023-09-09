@@ -59,11 +59,18 @@ import elf_3 from "./projects/ELF/elf_3.jpg";
 import elf_4 from "./projects/ELF/elf_4.jpg";
 import elf_5 from "./projects/ELF/elf_5.jpg";
 
-import scuba_0 from "./hobbies/scuba_0.png";
-import travel_0 from "./hobbies/travel_0.jpg";
-import hike_0 from "./hobbies/hike_0.jpg";
-import hike_1 from "./hobbies/hike_1.jpg";
-import soccer_0 from "./hobbies/soccer_0.jpeg";
+import hobby_0 from "./hobbies/hobby_0.jpg";
+import hobby_1 from "./hobbies/hobby_1.jpg";
+import hobby_2 from "./hobbies/hobby_2.jpg";
+import hobby_3 from "./hobbies/hobby_3.jpeg";
+import hobby_4 from "./hobbies/hobby_4.jpeg";
+import hobby_5 from "./hobbies/hobby_5.jpeg";
+import hobby_6 from "./hobbies/hobby_6.jpg";
+import hobby_7 from "./hobbies/hobby_7.jpg";
+import hobby_8 from "./hobbies/hobby_8.jpg";
+import hobby_9 from "./hobbies/hobby_9.jpeg";
+import hobby_10 from "./hobbies/hobby_10.jpeg";
+import hobby_11 from "./hobbies/hobby_11.jpeg";
 
 export {
   logo,
@@ -124,9 +131,16 @@ export {
   elf_5,
   elf_thumbnail,
 
-  scuba_0,
-  travel_0,
-  hike_0,
-  hike_1,
-  soccer_0,
+  hobby_0,
+  hobby_1,
+  hobby_2,
+  hobby_3,
+  hobby_4,
+  hobby_5,
+  hobby_6,
+  hobby_7,
+  hobby_8,
+  hobby_9,
+  hobby_10,
+  hobby_11,
 };
