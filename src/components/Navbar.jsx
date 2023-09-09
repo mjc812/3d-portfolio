@@ -40,7 +40,6 @@ const Navbar = () => {
             <img src={logo} alt='logo' className=' w-14 h-14 object-contain' />
             <p className='text-white text-[18px] font-bold cursor-pointer flex'>
               Michael Jung &nbsp;
-              <span className='sm:block hidden'> | Portfolio</span>
             </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
