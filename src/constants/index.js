@@ -33,6 +33,10 @@ import {
     woodlands_6,
     woodlands_7,
     woodlands_8,
+    pymethod_0,
+    pymethod_1,
+    pymethod_2,
+    pymethod_3,
     elf_thumbnail,
     elf_0,
     elf_1,
@@ -332,9 +336,12 @@ import {
         },
       ],
       photos: [
-        
+        pymethod_1,
+        pymethod_0,
+        pymethod_2,
+        pymethod_3,
       ],
-      image: tripguide,
+      image: pymethod_3,
       source_code_link: "https://github.com/",
       achievements: [
         "Spearheaded a team to develop a full-stack application that traces the control flow of python program to identify hotspots",

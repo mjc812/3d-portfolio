@@ -59,6 +59,11 @@ import elf_3 from "./projects/ELF/elf_3.jpg";
 import elf_4 from "./projects/ELF/elf_4.jpg";
 import elf_5 from "./projects/ELF/elf_5.jpg";
 
+import pymethod_0 from "./projects/pymethod/pymethod_0.png";
+import pymethod_1 from "./projects/pymethod/pymethod_1.png";
+import pymethod_2 from "./projects/pymethod/pymethod_2.png";
+import pymethod_3 from "./projects/pymethod/pymethod_3.png";
+
 import hobby_0 from "./hobbies/hobby_0.jpg";
 import hobby_1 from "./hobbies/hobby_1.jpg";
 import hobby_2 from "./hobbies/hobby_2.jpg";
@@ -122,6 +127,11 @@ export {
   woodlands_6,
   woodlands_7,
   woodlands_8,
+
+  pymethod_0,
+  pymethod_1,
+  pymethod_2,
+  pymethod_3,
 
   elf_0,
   elf_1,

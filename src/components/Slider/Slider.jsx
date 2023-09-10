@@ -24,7 +24,7 @@ const Slider = ({ photos }) => {
         {photos.map((photo, index) => (
           <img
             key={index}
-            className='w-[500px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
+            className='w-[500px] inline-block p-2 hover:scale-105 ease-in-out duration-300'
             src={photo}
             alt='/'
           />
