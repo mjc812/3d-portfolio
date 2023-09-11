@@ -342,7 +342,7 @@ import {
         pymethod_3,
       ],
       image: pymethod_3,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/mjc812/pymethod",
       achievements: [
         "Spearheaded a team to develop a full-stack application that traces the control flow of python program to identify hotspots",
         "Established the technology stack and the project’s architectural framework",
@@ -353,7 +353,7 @@ import {
       socials: [
         {
           name: socials.github,
-          href: "https://www.github.com"
+          href: "https://github.com/mjc812/pymethod"
         }
       ]
     },
