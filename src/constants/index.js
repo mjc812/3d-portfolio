@@ -302,7 +302,7 @@ import {
         "Utilized the Visitor pattern for a dynamic analysis and execution of the user’s code.",
         "Organized and oversaw user studies to record feedback and iteratively improve the language design.",
         "Maintained sound DSL design principles by ensuring self-containment, a low abstraction gradient, a simplified conceptual model, and comprehensive documentation.",
-        "Regularly organized and led collaborative development meetings with cross-functional teams to ensure project progress, identify and address challenges, and foster a culture of knowledge sharing."
+        "Regularly organized and led collaborative development meetings to ensure project progress, identify and address challenges, and foster a culture of knowledge sharing."
       ],
       socials: [
         {
@@ -320,7 +320,7 @@ import {
       description:
         "A full-stack application for developers that traces the control flow of python programs to identify hotspots",
       long_description:
-        "Pymethod was a utility program that I spearheaded with the goal of helping python developers identify hotspots in their code. It quickly traces the control flow of given programs, and visualizes the analysis data using a centrality graph.",
+        "Pymethod is a utility program that I spearheaded with the goal of helping python developers identify hotspots in their code. It quickly traces the control flow of given programs, and visualizes the analysis data using a centrality graph.",
       tags: [
         {
           name: "react",
