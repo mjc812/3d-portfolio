@@ -318,7 +318,7 @@ import {
     {
       name: "Pymethod",
       description:
-        "A full-stack application for developers that traces the control flow of python program to identify hotspots",
+        "A full-stack application for developers that traces the control flow of python programs to identify hotspots",
       long_description:
         "Pymethod was a utility program that I spearheaded with the goal of helping python developers identify hotspots in their code. It quickly traces the control flow of given programs, and visualizes the analysis data using a centrality graph.",
       tags: [

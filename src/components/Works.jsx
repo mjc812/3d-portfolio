@@ -72,7 +72,7 @@ const Works = () => {
             real-world examples of my work. It reflects my
             ability to solve complex problems, work with different technologies,
             and manage projects effectively.  
-            <span className="font-bold"> Click for more detail.</span>
+            <span className="font-bold"> Click on project cards for more detail.</span>
         </motion.p>
       </div>
 
